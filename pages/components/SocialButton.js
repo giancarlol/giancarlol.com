@@ -15,7 +15,7 @@ function renderIcon(social) {
   }
 }
 
-export const SocialButton = ({ social, color, link, iconText }) => {
+const SocialButton = ({ social, color, link, iconText }) => {
   const [showText, setShowText] = React.useState(false);
 
   return (
@@ -72,3 +72,5 @@ const IconText = styled.p`
 
   visibility: ${({ show }) => (show ? "default" : "hidden")};
 `;
+
+export default SocialButton;

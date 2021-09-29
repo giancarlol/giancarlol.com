@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
-import { SocialButton } from "./components";
+import SocialButton from "./components/SocialButton";
 
 export default function Home() {
   return (
