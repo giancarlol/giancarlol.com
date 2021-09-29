@@ -26,7 +26,7 @@ const SocialButton = ({ social, color, link, iconText }) => {
           onMouseLeave={() => setShowText(false)}
           color={color}
         >
-          {renderIcon(social)}
+          {social && renderIcon(social)}
         </LinkButton>
       </a>
       <IconText show={showText}>{iconText}</IconText>
