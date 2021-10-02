@@ -2,7 +2,7 @@ import React from "react";
 import useSound from "use-sound";
 import styled from "styled-components";
 
-export const Lamp = ({ click }) => {
+const Lamp = ({ click }) => {
   const [showText, setShowText] = React.useState(false);
   const [play] = useSound("sounds/light-switch.mp3");
 
@@ -70,3 +70,5 @@ const Darkness = styled.div`
   height: 100vh;
   background-color: black;
 `;
+
+export default Lamp;

@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import styled from "styled-components";
 import SocialButton from "./components/SocialButton";
-import { Lamp } from "./components/Lamp";
+import Lamp from "./components/Lamp";
 
 export default function Home() {
   const [lightsOn, setLightsOn] = React.useState(false);
