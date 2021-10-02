@@ -1,8 +1,16 @@
+import React from "react";
 import Head from "next/head";
 import styled from "styled-components";
 import SocialButton from "./components/SocialButton";
+import { Lamp } from "./components/Lamp";
 
 export default function Home() {
+  const [lightsOn, setLightsOn] = React.useState(false);
+
+  function turnLightOn() {
+    setLightsOn(true);
+  }
+
   return (
     <div>
       <Head>
@@ -10,6 +18,8 @@ export default function Home() {
         <meta name="description" content="Sitio personal de Giancarlo Brusca" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      {!lightsOn && <Lamp click={turnLightOn} />}
 
       <Main>
         <Hi>Hola.</Hi>
