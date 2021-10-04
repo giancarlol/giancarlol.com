@@ -61,6 +61,9 @@ const Main = styled.main`
 
   width: 100vw;
   height: 100vh;
+  padding: 0 20px;
+
+  text-align: center;
   background-color: white;
 `;
 
